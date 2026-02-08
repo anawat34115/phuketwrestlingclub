@@ -629,8 +629,11 @@
     </div>
 
     <!-- DESIGN C: BLUEPRINT -->
+     
     <div id="design-c" class="design-section bg-[#0a0f1c] text-white font-inter min-h-screen">
-        <nav class="absolute top-0 w-full z-50 px-6 py-6 flex justify-between items-center">
+        <div class="bg-blue-600 text-white font-bold py-2 text-center text-sm uppercase">⚡ Lorem Ipsum: Dolor 50% Off
+        </div>
+        <nav class="absolute top-10 w-full z-50 px-6 py-6 flex justify-between items-center">
             <span class="font-teko text-3xl font-bold text-white italic">LID</span>
             <div class="hidden md:flex gap-8 text-sm font-bold uppercase text-white/80"><a href="#">About</a><a
                     href="#">Prices</a><a href="#">Classes</a><a href="#">Contact</a></div>
@@ -811,14 +814,11 @@
             </div>
         </section>
 
-        <section class="relative h-[60vh] flex items-center justify-center overflow-hidden"><img
-                src="https://placehold.co/1920x600/334155/475569?text=Banner+Image"
-                class="absolute inset-0 w-full h-full object-cover">
-            <div class="absolute inset-0 bg-black/60"></div>
-            <div class="relative z-10 text-center px-4">
-                <h2 class="text-6xl md:text-9xl font-teko font-bold text-yellow-400 mb-4"
-                    style="font-family: 'Brush Script MT', cursive; font-style: italic;">Join Lorem Team</h2><button
-                    class="border-2 border-white text-white px-10 py-3 uppercase font-bold">VIEW SCHEDULE</button>
+        <section class="py-20 bg-blue-700 text-center">
+            <div class="container mx-auto px-6">
+                <h2 class="text-5xl font-black italic uppercase mb-6 text-white transform -skew-x-6 font-barlow">LOREM
+                    IPSUM DOLOR</h2><button
+                    class="bg-[#0b1120] text-white px-10 py-4 font-bold uppercase font-barlow">Join Now</button>
             </div>
         </section>
 
@@ -845,21 +845,75 @@
             </div>
         </section>
 
+        <!-- 7. Gallery (Inside The Lab - PDF Page 7 - Bento Grid) -->
         <section class="py-24 bg-[#050810] px-6">
             <div class="container mx-auto">
-                <h2 class="text-center text-4xl font-teko font-bold text-white mb-10 uppercase">Gallery</h2>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
-                    <div class="col-span-2 row-span-2 h-80 md:h-96"><img
-                            src="https://placehold.co/600x400/334155/94a3b8?text=Gallery+1"
-                            class="w-full h-full object-cover rounded-md"></div>
-                    <div class="h-40 md:h-44"><img src="https://placehold.co/300x200/475569/94a3b8?text=Image+2"
-                            class="w-full h-full object-cover rounded-md"></div>
-                    <div class="h-40 md:h-44 bg-white flex items-center justify-center rounded-md"><i
-                            data-lucide="image" class="w-16 h-16 text-black"></i></div>
-                    <div class="h-40 md:h-44"><img src="https://placehold.co/300x200/475569/94a3b8?text=Image+3"
-                            class="w-full h-full object-cover rounded-md"></div>
-                    <div class="h-40 md:h-44"><img src="https://placehold.co/300x200/475569/94a3b8?text=Image+4"
-                            class="w-full h-full object-cover rounded-md"></div>
+                <h2 class="text-center text-5xl font-teko font-bold text-white mb-16 uppercase tracking-wider">A Look Into The Wrestling Gym</h2>
+                
+                <!-- BENTO GRID - ENLARGED -->
+                <div class="grid grid-cols-2 md:grid-cols-4 grid-rows-4 md:grid-rows-2 gap-4 h-[1000px] md:h-[800px]">
+                    
+                    <!-- 1. BIG IMAGE (Left) - Takes up 2x2 space -->
+                    <div class="col-span-2 row-span-2 relative group overflow-hidden rounded-xl shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?q=80&w=2069&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60"></div>
+                        <div class="absolute bottom-6 left-6">
+                            <span class="font-teko text-3xl text-white uppercase tracking-widest bg-blue-600 px-3 py-1">Main Mat Area</span>
+                        </div>
+                    </div>
+
+                    <!-- 2 (Top Right 1) -->
+                    <div class="col-span-1 row-span-1 relative group overflow-hidden rounded-xl shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1626246939899-72202633852f?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    </div>
+
+                    <!-- 3. T-Shirt (Top Right 2) -->
+                    <div class="col-span-1 row-span-1 relative group overflow-hidden rounded-xl bg-white flex items-center justify-center shadow-lg border-4 border-white">
+                        <div class="text-center">
+                            <i data-lucide="shirt" class="w-20 h-20 text-[#0a0f1c] mx-auto mb-2"></i>
+                            <p class="font-teko text-2xl text-[#0a0f1c] font-bold uppercase">Team Gear</p>
+                        </div>
+                    </div>
+
+                    <!-- 4 (Bottom Right 1) -->
+                    <div class="col-span-1 row-span-1 relative group overflow-hidden rounded-xl shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    </div>
+
+                    <!-- 5 (Bottom Right 2) -->
+                    <div class="col-span-1 row-span-1 relative group overflow-hidden rounded-xl shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    </div>
+                </div>
+                
+                <!-- Extra Row (Bottom strip - Larger) -->
+                <div class="grid grid-cols-4 gap-4 mt-4 h-48">
+                     <div class="col-span-1 rounded-xl overflow-hidden shadow-lg group relative">
+                        <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                     </div>
+                     <div class="col-span-1 rounded-xl overflow-hidden shadow-lg group relative">
+                        <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                     </div>
+                     <div class="col-span-1 rounded-xl overflow-hidden bg-red-600 flex items-center justify-center shadow-lg group hover:bg-red-700 transition-colors cursor-pointer">
+                        <div class="text-center">
+                            <span class="font-teko text-5xl font-bold text-white block leading-none">SHOES</span>
+                            <span class="font-inter text-xs text-white/80 uppercase tracking-widest">Required</span>
+                        </div>
+                     </div>
+                     <div class="col-span-1 rounded-xl overflow-hidden shadow-lg group relative">
+                        <img src="https://images.unsplash.com/photo-1517438476312-10d79c077509?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                     </div>
+                </div>
+            </div>
+        </section>
+
+                <section id="classes-c" class="py-24 bg-white text-black px-6">
+            <div class="container mx-auto">
+                <h2 class="text-center text-4xl font-teko font-bold text-[#0a0f1c] mb-16 uppercase">Our Classes</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="rounded-xl overflow-hidden shadow-lg relative h-96 group"><img src="https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?q=80&w=2069&auto=format&fit=crop" class="w-full h-full object-cover brightness-50 group-hover:brightness-75 transition-all"><div class="absolute bottom-0 left-0 p-6"><h3 class="text-3xl font-bold text-white mb-2 font-serif">Beginner</h3><button class="border border-white text-white px-4 py-1 text-xs uppercase font-bold">Learn More</button></div></div>
+                    <div class="rounded-xl overflow-hidden shadow-lg relative h-96 group"><img src="https://images.unsplash.com/photo-1555597673-b21d5c935865?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover brightness-50 group-hover:brightness-75 transition-all"><div class="absolute bottom-0 left-0 p-6"><h3 class="text-3xl font-bold text-white mb-2 font-serif">Amateur</h3><button class="border border-white text-white px-4 py-1 text-xs uppercase font-bold">Learn More</button></div></div>
+                    <div class="rounded-xl overflow-hidden shadow-lg relative h-96 group"><img src="https://images.unsplash.com/photo-1595078475328-1ab05d0a6a0e?q=80&w=2000&auto=format&fit=crop" class="w-full h-full object-cover brightness-50 group-hover:brightness-75 transition-all"><div class="absolute bottom-0 left-0 p-6"><h3 class="text-3xl font-bold text-white mb-2 font-serif">Pro</h3><button class="border border-white text-white px-4 py-1 text-xs uppercase font-bold">Learn More</button></div></div>
                 </div>
             </div>
         </section>
