@@ -4,978 +4,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lorem Ipsum - Demo Preview</title>
+    <title>LOREM IPSUM LAB - BLUEPRINT</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@300;400;500;700&family=Inter:wght@300;400;600;700;800&family=Barlow+Condensed:ital,wght@0,400;0,700;0,800;1,700&family=Teko:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Teko:wght@300;400;500;600;700&family=Barlow+Condensed:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        .font-anton {
-            font-family: 'Anton', sans-serif;
-        }
+        .font-inter { font-family: 'Inter', sans-serif; }
+        .font-teko { font-family: 'Teko', sans-serif; }
+        .font-barlow { font-family: 'Barlow Condensed', sans-serif; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        html { scroll-behavior: smooth; }
 
-        .font-oswald {
-            font-family: 'Oswald', sans-serif;
-        }
-
-        .font-barlow {
-            font-family: 'Barlow Condensed', sans-serif;
-        }
-
-        .font-inter {
-            font-family: 'Inter', sans-serif;
-        }
-
-        .font-teko {
-            font-family: 'Teko', sans-serif;
-        }
-
-        .bg-noise {
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
-        }
-
-        .hide-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-
-        .hide-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-
-        .design-section {
-            display: none;
-        }
-
-        .design-section.active {
-            display: block;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        @keyframes pulse-ring {
-            0% {
-                transform: scale(0.8);
-                opacity: 0.5;
-            }
-
-            100% {
-                transform: scale(1.5);
-                opacity: 0;
-            }
-        }
-
-        .play-pulse::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            border-radius: 50%;
-            border: 2px solid white;
-            animation: pulse-ring 2s infinite;
+        /* Color Ref จากรูปภาพ */
+        :root {
+            --navy-main: #071B3F;
+            --navy-deep: #051229;
+            --navy-purple: #102F6F;
+            --light-blue: #8BB9F1;
+            --cta-blue: #2F80ED;
         }
     </style>
 </head>
 
-<body class="bg-black text-white font-inter overflow-x-hidden">
+<body class="bg-[#071B3F] text-white font-inter overflow-x-hidden">
 
-    <!-- DESIGN A: IRON WILL -->
-    <div id="design-a" class="design-section active bg-[#0f172a] bg-noise min-h-screen text-slate-200">
-        <div class="bg-blue-800 text-white text-xs font-bold py-3 text-center tracking-widest uppercase">
-            <span class="inline-block animate-pulse mr-2">●</span> Lorem Ipsum Dolor — Sit Amet 50% OFF
-        </div>
-        <nav
-            class="sticky top-0 z-50 bg-[#0f172a]/95 backdrop-blur-sm border-b border-white/10 px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-3">
-                <div
-                    class="w-10 h-10 bg-white text-[#0f172a] flex items-center justify-center font-anton text-2xl rounded-sm">
-                    L</div>
-                <div class="leading-none">
-                    <span class="font-oswald text-xl font-bold text-white block uppercase">Lorem Ipsum</span>
-                    <span class="text-[10px] uppercase tracking-widest text-blue-400">Dolor Sit Amet</span>
-                </div>
-            </div>
-            <div class="hidden md:flex gap-8 font-oswald text-lg uppercase text-slate-400">
-                <a href="#" class="hover:text-white">About</a>
-                <a href="#" class="hover:text-white">Team</a>
-                <a href="#" class="hover:text-white">Gallery</a>
-                <a href="#" class="hover:text-white">Contact</a>
-            </div>
-            <button
-                class="hidden md:block bg-blue-700 text-white px-6 py-2 font-oswald font-bold uppercase skew-x-[-10deg]"><span
-                    class="skew-x-[10deg] block">Get Started</span></button>
-        </nav>
-
-        <header class="relative min-h-[90vh] flex flex-col justify-center px-6 overflow-hidden border-b border-white/5">
-            <div class="absolute inset-0 bg-[#0f172a]">
-                <div class="absolute inset-0 bg-gradient-to-r from-[#0f172a] via-[#0f172a]/90 to-transparent"></div>
-            </div>
-            <div class="container mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <div class="inline-block border-l-4 border-blue-600 pl-4 mb-6">
-                        <p class="font-oswald text-blue-400 text-lg uppercase tracking-widest">Lorem Ipsum Dolor</p>
-                    </div>
-                    <h1 class="text-7xl md:text-9xl font-anton text-white uppercase leading-[0.9] mb-8">Dolor<br /><span
-                            class="text-blue-600">Sit</span><br />Amet</h1>
-                    <p class="text-slate-300 text-xl max-w-lg mb-10">Consectetur adipiscing elit sed do eiusmod tempor
-                        incididunt ut labore. <strong class="text-white">Ut enim ad minim veniam.</strong></p>
-                    <button
-                        class="bg-white text-[#0f172a] px-10 py-4 font-oswald text-2xl font-bold uppercase hover:bg-blue-600 hover:text-white transition-colors">Lorem
-                        Ipsum</button>
-                </div>
-                <div class="hidden lg:flex justify-end">
-                    <div class="relative w-[500px] h-[600px] bg-slate-800 overflow-hidden"><img
-                            src="https://placehold.co/500x600/1e293b/64748b?text=Hero+Image"
-                            class="w-full h-full object-cover">
-                        <div class="absolute bottom-0 left-0 bg-blue-700 p-6 w-3/4">
-                            <p class="font-oswald text-white text-2xl uppercase">Lorem Daily</p>
-                            <p class="text-blue-100 text-sm">7:00 AM - 9:00 PM</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <section class="py-24 px-6 bg-[#0b1120]">
-            <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                <div>
-                    <h2 class="text-5xl font-oswald font-bold text-white mb-6 uppercase">LOREM IPSUM DOLOR,<br /><span
-                            class="text-blue-600">SIT AMET CONSECTETUR</span></h2>
-                    <p class="text-slate-400 text-lg mb-8">Adipiscing elit sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam quis nostrud.</p>
-                </div>
-                <div class="relative group cursor-pointer min-h-[400px]">
-                    <div class="w-full h-full bg-slate-800 overflow-hidden relative"><img
-                            src="https://placehold.co/800x500/334155/94a3b8?text=Video+Thumbnail"
-                            class="w-full h-full object-cover opacity-80">
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <div
-                                class="w-24 h-24 bg-blue-600/90 rounded-full flex items-center justify-center play-pulse">
-                                <i data-lucide="play" class="w-10 h-10 text-white fill-current ml-1"></i>
-                            </div>
-                        </div>
-                        <div class="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-black to-transparent">
-                            <p class="font-oswald text-5xl text-white uppercase italic">VIDEO TOUR</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="py-24 px-6 bg-[#0f172a]">
-            <div class="container mx-auto">
-                <h2 class="text-center text-5xl font-oswald font-bold text-white mb-16 uppercase">Testimonials</h2>
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-                    <div class="p-8 border border-white/10 bg-[#0b1120]">
-                        <div class="flex text-blue-500 mb-4 gap-1"><i data-lucide="star"
-                                class="fill-current w-4 h-4"></i><i data-lucide="star"
-                                class="fill-current w-4 h-4"></i><i data-lucide="star"
-                                class="fill-current w-4 h-4"></i><i data-lucide="star"
-                                class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i>
-                        </div>
-                        <p class="text-slate-300 italic mb-6">"Lorem ipsum dolor sit amet."</p>
-                        <p class="text-white font-oswald uppercase text-sm">- John D.</p>
-                    </div>
-                    <div class="p-8 border border-white/10 bg-[#0b1120]">
-                        <div class="flex text-blue-500 mb-4 gap-1"><i data-lucide="star"
-                                class="fill-current w-4 h-4"></i><i data-lucide="star"
-                                class="fill-current w-4 h-4"></i><i data-lucide="star"
-                                class="fill-current w-4 h-4"></i><i data-lucide="star"
-                                class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i>
-                        </div>
-                        <p class="text-slate-300 italic mb-6">"Consectetur adipiscing elit."</p>
-                        <p class="text-white font-oswald uppercase text-sm">- Sarah M.</p>
-                    </div>
-                    <div class="p-8 border border-white/10 bg-[#0b1120]">
-                        <div class="flex text-blue-500 mb-4 gap-1"><i data-lucide="star"
-                                class="fill-current w-4 h-4"></i><i data-lucide="star"
-                                class="fill-current w-4 h-4"></i><i data-lucide="star"
-                                class="fill-current w-4 h-4"></i><i data-lucide="star"
-                                class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i>
-                        </div>
-                        <p class="text-slate-300 italic mb-6">"Sed do eiusmod tempor."</p>
-                        <p class="text-white font-oswald uppercase text-sm">- David L.</p>
-                    </div>
-                    <div class="p-8 border border-white/10 bg-[#0b1120]">
-                        <div class="flex text-blue-500 mb-4 gap-1"><i data-lucide="star"
-                                class="fill-current w-4 h-4"></i><i data-lucide="star"
-                                class="fill-current w-4 h-4"></i><i data-lucide="star"
-                                class="fill-current w-4 h-4"></i><i data-lucide="star"
-                                class="fill-current w-4 h-4"></i><i data-lucide="star" class="fill-current w-4 h-4"></i>
-                        </div>
-                        <p class="text-slate-300 italic mb-6">"Ut labore et dolore magna."</p>
-                        <p class="text-white font-oswald uppercase text-sm">- Alex R.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="py-24 px-6 bg-[#0b1120]">
-            <div class="container mx-auto">
-                <h2 class="text-6xl font-anton text-white uppercase mb-16">Our Team</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                    <div class="bg-[#1e293b] overflow-hidden">
-                        <div class="h-[450px] bg-slate-700"><img
-                                src="https://placehold.co/500x450/475569/94a3b8?text=Team+1"
-                                class="w-full h-full object-cover"></div>
-                        <div class="p-8">
-                            <h3 class="text-5xl font-oswald font-bold text-white mb-2 uppercase">John Doe</h3>
-                            <p class="text-slate-400 text-sm mb-6 uppercase">Lorem / Ipsum Expert</p>
-                            <p class="text-slate-300 border-l-4 border-blue-600 pl-6">Consectetur adipiscing elit sed do
-                                eiusmod tempor.</p>
-                        </div>
-                    </div>
-                    <div class="bg-[#1e293b] overflow-hidden">
-                        <div class="h-[450px] bg-slate-700"><img
-                                src="https://placehold.co/500x450/475569/94a3b8?text=Team+2"
-                                class="w-full h-full object-cover"></div>
-                        <div class="p-8">
-                            <h3 class="text-5xl font-oswald font-bold text-white mb-2 uppercase">Jane Smith</h3>
-                            <p class="text-slate-400 text-sm mb-6 uppercase">Dolor / Sit Amet</p>
-                            <p class="text-slate-300 border-l-4 border-blue-600 pl-6">Incididunt ut labore et dolore
-                                magna aliqua.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="py-24 px-6 bg-blue-900 text-center">
-            <div class="container mx-auto">
-                <h2 class="text-6xl md:text-8xl font-anton text-white mb-6 uppercase">Lorem. Ipsum. Dolor.</h2>
-                <p class="text-blue-100 max-w-2xl mx-auto mb-10 text-xl">Sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua.</p><button
-                    class="bg-white text-blue-900 px-10 py-4 font-oswald font-bold text-xl uppercase">Lorem
-                    Ipsum</button>
-            </div>
-        </section>
-
-        <section class="py-24 px-6 bg-[#0f172a]">
-            <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
-                <div class="border-t-4 border-blue-600 pt-6"><i data-lucide="check-circle"
-                        class="text-white w-10 h-10 mb-4"></i>
-                    <h3 class="text-3xl font-oswald font-bold text-white mb-2 uppercase">Feature One</h3>
-                    <p class="text-slate-400">Lorem ipsum dolor sit amet consectetur.</p>
-                </div>
-                <div class="border-t-4 border-blue-600 pt-6"><i data-lucide="bar-chart-3"
-                        class="text-white w-10 h-10 mb-4"></i>
-                    <h3 class="text-3xl font-oswald font-bold text-white mb-2 uppercase">Feature Two</h3>
-                    <p class="text-slate-400">Sed do eiusmod tempor incididunt.</p>
-                </div>
-                <div class="border-t-4 border-blue-600 pt-6"><i data-lucide="users"
-                        class="text-white w-10 h-10 mb-4"></i>
-                    <h3 class="text-3xl font-oswald font-bold text-white mb-2 uppercase">Feature Three</h3>
-                    <p class="text-slate-400">Ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="py-24 bg-[#0b1120]">
-            <div class="container mx-auto px-6">
-                <h2 class="text-4xl font-oswald font-bold text-white uppercase mb-10 text-center">Gallery</h2>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-                    <div class="col-span-2 row-span-2 h-80 md:h-96"><img
-                            src="https://placehold.co/600x400/334155/94a3b8?text=Gallery+1"
-                            class="w-full h-full object-cover rounded-lg"></div>
-                    <div class="h-40 md:h-44"><img src="https://placehold.co/300x200/475569/94a3b8?text=Image+2"
-                            class="w-full h-full object-cover rounded-lg"></div>
-                    <div class="h-40 md:h-44"><img src="https://placehold.co/300x200/475569/94a3b8?text=Image+3"
-                            class="w-full h-full object-cover rounded-lg"></div>
-                    <div class="h-40 md:h-44"><img src="https://placehold.co/300x200/475569/94a3b8?text=Image+4"
-                            class="w-full h-full object-cover rounded-lg"></div>
-                    <div class="h-40 md:h-44"><img src="https://placehold.co/300x200/475569/94a3b8?text=Image+5"
-                            class="w-full h-full object-cover rounded-lg"></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="py-32 px-6 bg-blue-800 text-center">
-            <div class="container mx-auto">
-                <h2 class="text-7xl md:text-9xl font-anton text-white mb-6 uppercase leading-none">Start<br />Now</h2>
-                <p class="text-blue-200 font-bold text-xl mb-12 uppercase tracking-widest">Lorem ipsum dolor sit amet.
-                </p><button class="bg-[#0f172a] text-white px-16 py-6 font-oswald font-bold text-3xl uppercase">Contact
-                    Us</button>
-            </div>
-        </section>
-
-        <footer
-            class="bg-[#020617] py-12 px-6 border-t border-white/10 text-center text-slate-500 font-oswald text-sm uppercase tracking-widest">
-            <!-- Google Map Section -->
-            <div class="max-w-4xl mx-auto mb-8">
-                <div class="aspect-video w-full rounded-lg overflow-hidden border border-white/10">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63083.36767892384!2d98.30584187910156!3d7.881461799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305031e1b96b0c8f%3A0x30a0d5e07a40960!2sChalong%2C%20Phuket!5e0!3m2!1sen!2sth!4v1234567890123!5m2!1sen!2sth"
-                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            </div>
-
-            <!-- Contact Info -->
-            <div id="contact-a" class="flex justify-center gap-6 mb-6 text-white">
-                <i data-lucide="map-pin"></i> Chalong, Phuket
-            </div>
-
-            <!-- Copyright -->
-            <p>© 2024 Phuket Defense Lab.</p>
-        </footer>
+    <div class="bg-[#2F80ED] text-white font-bold py-2 text-center text-sm uppercase tracking-wider z-[60] relative">
+        ⚡ Lorem Ipsum: Dolor 50% Off Member
     </div>
 
-    <!-- DESIGN B: PRO ATHLETE -->
-    <div id="design-b" class="design-section bg-[#0b1120] text-white font-inter min-h-screen">
-        <div class="bg-blue-600 text-white font-bold py-2 text-center text-sm uppercase">⚡ Lorem Ipsum: Dolor 50% Off
+    <nav class="absolute top-10 w-full z-50 px-6 py-6 flex justify-between items-center">
+        <span class="font-teko text-4xl font-bold text-white italic tracking-tighter">LID</span>
+        <div class="hidden md:flex gap-8 text-xs font-bold uppercase text-[#A9CBF6]">
+            <a href="#about" class="hover:text-white transition">About</a>
+            <a href="#classes" class="hover:text-white transition">Prices</a>
+            <a href="#classes" class="hover:text-white transition">Classes</a>
+            <a href="#location" class="hover:text-white transition">Contact</a>
         </div>
-        <nav
-            class="sticky top-0 z-50 bg-[#0b1120]/95 backdrop-blur px-6 py-4 flex justify-between items-center border-b border-slate-800">
-            <div class="text-2xl font-black italic tracking-tighter text-white font-barlow">LOREM<span
-                    class="text-blue-500">IPSUM</span></div>
-            <div class="hidden md:flex gap-8 text-sm font-bold uppercase text-slate-300"><a href="#">Program</a><a
-                    href="#">Team</a><a href="#">Facility</a><a href="#">Join</a></div>
-            <button
-                class="hidden md:block bg-white text-blue-900 px-6 py-2 font-black italic uppercase skew-x-[-10deg] font-barlow"><span
-                    class="skew-x-[10deg] block">Get Started</span></button>
-        </nav>
+        <button class="bg-[#2F80ED] hover:bg-blue-600 text-white px-8 py-2 font-bold uppercase text-sm skew-x-[-10deg] transition shadow-lg shadow-blue-900/40">
+            <span class="skew-x-[10deg] block">Book Now</span>
+        </button>
+    </nav>
 
-        <header class="relative min-h-screen flex items-center overflow-hidden bg-[#0b1120]">
-            <div class="absolute top-0 right-0 w-2/3 h-full bg-blue-900/20 skew-x-[-20deg] translate-x-20"></div>
-            <div class="container mx-auto px-6 relative z-20 pt-20">
-                <h1 class="text-7xl md:text-9xl font-black italic uppercase leading-[0.85] mb-6 font-barlow">
-                    Lorem<br /><span
-                        class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-white">Ipsum.</span></h1>
-                <div class="h-2 w-32 bg-blue-600 mb-8 skew-x-[-20deg]"></div>
-                <p class="text-xl md:text-2xl text-slate-300 max-w-xl font-medium mb-10">Consectetur adipiscing elit sed
-                    do eiusmod. <br />Tempor incididunt ut labore.</p>
-                <button
-                    class="bg-blue-600 text-white px-10 py-4 font-bold uppercase hover:bg-blue-500 transition-colors rounded-sm">View
-                    More</button>
+    <header class="relative h-screen flex items-center justify-center overflow-hidden bg-[#051229]">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?q=80&w=1920" class="w-full h-full object-cover opacity-40">
+            <div class="absolute inset-0 bg-gradient-to-b from-[#071B3F]/90 via-[#102F6F]/50 to-[#071B3F]"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16">
+            <h2 class="text-[#2F80ED] font-bold tracking-[0.4em] text-xs mb-4 uppercase">Advanced Training Lab</h2>
+            <h1 class="text-7xl md:text-9xl font-teko font-bold text-white uppercase italic leading-[0.8] mb-8 drop-shadow-2xl">
+                Lorem<br /><span class="text-transparent bg-clip-text bg-gradient-to-r from-[#8BB9F1] to-white">Ipsum Lab</span>
+            </h1>
+            <p class="text-[#A9CBF6] text-lg md:text-xl mb-10 max-w-2xl mx-auto font-medium">Consectetur adipiscing elit sed do eiusmod tempor.</p>
+            <button class="bg-[#2F80ED] text-white px-12 py-4 font-bold text-lg uppercase hover:bg-blue-500 transition-all shadow-xl shadow-blue-900/50">Book Now</button>
+        </div>
+    </header>
+
+    <section id="about" class="py-24 bg-white text-[#071B3F]">
+        <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-5xl md:text-7xl font-teko font-bold uppercase leading-none mb-6 italic tracking-tighter">LOREM IPSUM DOLOR,<br /><span class="text-[#2F80ED]">SIT AMET CONSECTETUR</span></h2>
+                <p class="text-slate-600 text-lg mb-8 leading-relaxed">Adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
+                <button class="border-2 border-[#071B3F] text-[#071B3F] px-8 py-3 font-bold uppercase hover:bg-[#071B3F] hover:text-white transition duration-300">Learn More</button>
             </div>
-        </header>
-
-        <section class="py-24 bg-[#0f172a]">
-            <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                <div>
-                    <h2 class="text-4xl md:text-5xl font-black italic uppercase mb-6 font-barlow">LOREM IPSUM
-                        DOLOR,<br><span class="text-blue-500">SIT AMET CONSECTETUR</span></h2>
-                    <p class="text-slate-400 text-lg mb-8">Adipiscing elit sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua ut enim ad minim veniam.</p>
-                    <button class="border border-white text-white px-6 py-2 uppercase font-bold">LEARN MORE</button>
-                </div>
-                <div class="relative group cursor-pointer">
-                    <div class="aspect-video bg-black rounded-lg overflow-hidden relative"><img
-                            src="https://placehold.co/800x450/334155/94a3b8?text=Video+Preview"
-                            class="w-full h-full object-cover opacity-70">
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <div
-                                class="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/30">
-                                <i data-lucide="play" class="w-8 h-8 text-white fill-current ml-1"></i>
-                            </div>
-                        </div>
-                        <div class="absolute bottom-6 left-6">
-                            <h3 class="text-4xl font-black italic uppercase font-barlow text-white">LOREM TOUR</h3>
-                        </div>
+            <div class="relative group cursor-pointer shadow-[20px_20px_0px_0px_#2F80ED] rounded-sm overflow-hidden transition-transform hover:translate-x-1 hover:translate-y-1">
+                <div class="aspect-video bg-[#071B3F] relative">
+                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=800" class="w-full h-full object-cover brightness-75 group-hover:brightness-100 transition duration-500">
+                    <div class="absolute inset-0 flex items-center justify-center group-hover:bg-black/20 transition">
+                        <i data-lucide="play" class="w-20 h-20 text-white fill-white drop-shadow-lg"></i>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- 3. Reviews -->
-        <section class="py-20 bg-[#0b1120] border-t border-white/10">
-            <div class="container mx-auto px-6">
-                <!-- Google Header -->
-                <div class="flex flex-col md:flex-row items-center justify-between mb-10 gap-4">
-                    <div class="flex items-center gap-4 bg-white px-6 py-3 rounded-full shadow-sm">
-                        <svg class="w-8 h-8" viewBox="0 0 48 48">
-                            <path fill="#EA4335"
-                                d="M24 9.5c3.54 0 6.63 1.22 9.14 3.59l6.81-6.81C35.75 2.64 29.97 0 24 0 14.66 0 6.55 5.38 2.61 13.29l7.98 6.19C12.48 13.06 17.75 9.5 24 9.5z">
-                            </path>
-                            <path fill="#4285F4"
-                                d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6.19c4.51-4.18 7.09-10.36 7.09-17.84z">
-                            </path>
-                            <path fill="#FBBC05"
-                                d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z">
-                            </path>
-                            <path fill="#34A853"
-                                d="M24 48c6.48 0 12.56-2.15 16.96-6.19l-7.73-6.19C29.79 38.69 27.22 40 24 40c-6.25 0-11.52-3.56-13.47-9.97l-7.98 6.19C6.55 42.62 14.66 48 24 48z">
-                            </path>
-                        </svg>
+    <section class="py-20 bg-[#8BB9F1] border-t border-white/10 text-[#071B3F]">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between mb-10 gap-4">
+                <div class="flex items-center gap-4 bg-white px-6 py-3 rounded-full shadow-lg">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" class="w-6 h-6">
+                    <div>
+                        <div class="font-bold text-sm leading-none uppercase tracking-tighter text-[#071B3F]">Excellent</div>
+                        <div class="flex text-[#e7711b] mt-1"><i data-lucide="star" class="fill-current w-3 h-3"></i><i data-lucide="star" class="fill-current w-3 h-3"></i><i data-lucide="star" class="fill-current w-3 h-3"></i><i data-lucide="star" class="fill-current w-3 h-3"></i><i data-lucide="star" class="fill-current w-3 h-3"></i></div>
+                    </div>
+                </div>
+                <div class="text-[#071B3F] text-sm font-bold italic border-b-2 border-[#071B3F]">Based on 1,138 reviews on Google</div>
+            </div>
+            <div class="flex gap-6 overflow-x-auto hide-scrollbar pb-8 snap-x">
+                <div class="min-w-[320px] bg-white p-8 rounded-2xl shadow-xl snap-center text-[#071B3F]">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-[#071B3F] text-white rounded-full flex items-center justify-center font-bold">D</div>
                         <div>
-                            <div class="font-bold text-sm text-slate-800">Excellent</div>
-                            <div class="flex text-[#e7711b] w-24"><i data-lucide="star"
-                                    class="fill-current w-4 h-4"></i><i data-lucide="star"
-                                    class="fill-current w-4 h-4"></i><i data-lucide="star"
-                                    class="fill-current w-4 h-4"></i><i data-lucide="star"
-                                    class="fill-current w-4 h-4"></i><i data-lucide="star"
-                                    class="fill-current w-4 h-4"></i></div>
+                            <div class="font-bold text-sm uppercase">Darko Lukach</div>
+                            <div class="text-xs text-slate-400 text-left">1 year ago</div>
                         </div>
                     </div>
-                    <div class="text-slate-500 text-sm font-medium">Based on 1,138 reviews on Google</div>
+                    <p class="text-sm text-slate-600 leading-relaxed font-medium italic">"Perfect place, clean mats and amazing coaches. Highly recommended!"</p>
                 </div>
-
-                <!-- Google Style Review Cards (Horizontal Scroll) -->
-                <div class="flex gap-4 overflow-x-auto hide-scrollbar pb-8 snap-x">
-                    <!-- Review 1 -->
-                    <div class="min-w-[320px] bg-white p-6 rounded-xl shadow-md border border-slate-100 snap-center">
-                        <div class="flex items-center gap-3 mb-4">
-                            <div
-                                class="w-10 h-10 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold text-sm">
-                                D</div>
-                            <div>
-                                <div class="font-bold text-sm text-[#0a0f1c]">Darko Lukach</div>
-                                <div class="text-xs text-slate-400">1 year ago</div>
-                            </div>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
-                                class="w-4 h-4 ml-auto opacity-50">
-                        </div>
-                        <div class="flex text-[#e7711b] w-20 mb-3"><i data-lucide="star"
-                                class="fill-current w-3 h-3"></i><i data-lucide="star"
-                                class="fill-current w-3 h-3"></i><i data-lucide="star"
-                                class="fill-current w-3 h-3"></i><i data-lucide="star"
-                                class="fill-current w-3 h-3"></i><i data-lucide="star" class="fill-current w-3 h-3"></i>
-                        </div>
-                        <p class="text-sm text-slate-600 leading-relaxed">"Perfekt place, clean mats and amazing
-                            coaches. Highly recommended!"</p>
-                    </div>
-
-                    <!-- Review 2 -->
-                    <div class="min-w-[320px] bg-white p-6 rounded-xl shadow-md border border-slate-100 snap-center">
-                        <div class="flex items-center gap-3 mb-4">
-                            <div
-                                class="w-10 h-10 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-sm">
-                                S</div>
-                            <div>
-                                <div class="font-bold text-sm text-[#0a0f1c]">Saint Jay</div>
-                                <div class="text-xs text-slate-400">1 year ago</div>
-                            </div>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
-                                class="w-4 h-4 ml-auto opacity-50">
-                        </div>
-                        <div class="flex text-[#e7711b] w-20 mb-3"><i data-lucide="star"
-                                class="fill-current w-3 h-3"></i><i data-lucide="star"
-                                class="fill-current w-3 h-3"></i><i data-lucide="star"
-                                class="fill-current w-3 h-3"></i><i data-lucide="star"
-                                class="fill-current w-3 h-3"></i><i data-lucide="star" class="fill-current w-3 h-3"></i>
-                        </div>
-                        <p class="text-sm text-slate-600 leading-relaxed">"Thai boxing perfection, you'll get fit by
-                            force. The community is great."</p>
-                    </div>
-
-                    <!-- Review 3 -->
-                    <div class="min-w-[320px] bg-white p-6 rounded-xl shadow-md border border-slate-100 snap-center">
-                        <div class="flex items-center gap-3 mb-4">
-                            <div
-                                class="w-10 h-10 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold text-sm">
-                                M</div>
-                            <div>
-                                <div class="font-bold text-sm text-[#0a0f1c]">Makayla Seto</div>
-                                <div class="text-xs text-slate-400">1 year ago</div>
-                            </div>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
-                                class="w-4 h-4 ml-auto opacity-50">
-                        </div>
-                        <div class="flex text-[#e7711b] w-20 mb-3"><i data-lucide="star"
-                                class="fill-current w-3 h-3"></i><i data-lucide="star"
-                                class="fill-current w-3 h-3"></i><i data-lucide="star"
-                                class="fill-current w-3 h-3"></i><i data-lucide="star"
-                                class="fill-current w-3 h-3"></i><i data-lucide="star" class="fill-current w-3 h-3"></i>
-                        </div>
-                        <p class="text-sm text-slate-600 leading-relaxed">"Great gym, very inclusive for women and they
-                            are very sanitary. Love it here."</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="py-24 px-6 bg-[#0f172a]">
-            <div class="container mx-auto">
-                <h2 class="text-5xl font-black italic uppercase text-center mb-16 font-barlow"><span
-                        class="text-blue-600">///</span> Elite Team</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                    <div class="group relative h-[450px] overflow-hidden bg-slate-800 rounded-lg"><img
-                            src="https://placehold.co/500x450/475569/94a3b8?text=Member+1"
-                            class="w-full h-full object-cover">
-                        <div class="absolute bottom-0 left-0 p-8 w-full">
-                            <div class="h-1 w-12 bg-blue-600 mb-4"></div>
-                            <h3 class="text-3xl font-black uppercase italic font-barlow">JOHN DOE</h3>
-                            <p class="text-blue-400 font-bold uppercase text-sm">HEAD DIRECTOR</p>
-                        </div>
-                    </div>
-                    <div class="group relative h-[450px] overflow-hidden bg-slate-800 rounded-lg"><img
-                            src="https://placehold.co/500x450/475569/94a3b8?text=Member+2"
-                            class="w-full h-full object-cover">
-                        <div class="absolute bottom-0 left-0 p-8 w-full">
-                            <div class="h-1 w-12 bg-blue-600 mb-4"></div>
-                            <h3 class="text-3xl font-black uppercase italic font-barlow">JANE SMITH</h3>
-                            <p class="text-blue-400 font-bold uppercase text-sm">TECHNICAL LEAD</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="py-20 bg-blue-700 text-center">
-            <div class="container mx-auto px-6">
-                <h2 class="text-5xl font-black italic uppercase mb-6 text-white transform -skew-x-6 font-barlow">LOREM
-                    IPSUM DOLOR</h2><button
-                    class="bg-[#0b1120] text-white px-10 py-4 font-bold uppercase font-barlow">Join Now</button>
-            </div>
-        </section>
-
-        <section class="py-24 px-6 bg-[#0b1120]">
-            <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                <div class="p-6 border border-blue-900/30 rounded-xl">
-                    <div class="inline-block p-4 bg-blue-600/20 rounded-full mb-4 text-blue-500"><i
-                            data-lucide="check-circle" class="w-6 h-6"></i></div>
-                    <h3 class="text-xl font-bold uppercase mb-2">Feature One</h3>
-                    <p class="text-slate-400 text-sm">Lorem ipsum dolor sit.</p>
-                </div>
-                <div class="p-6 border border-blue-900/30 rounded-xl">
-                    <div class="inline-block p-4 bg-blue-600/20 rounded-full mb-4 text-blue-500"><i
-                            data-lucide="bar-chart-3" class="w-6 h-6"></i></div>
-                    <h3 class="text-xl font-bold uppercase mb-2">Feature Two</h3>
-                    <p class="text-slate-400 text-sm">Consectetur adipiscing.</p>
-                </div>
-                <div class="p-6 border border-blue-900/30 rounded-xl">
-                    <div class="inline-block p-4 bg-blue-600/20 rounded-full mb-4 text-blue-500"><i
-                            data-lucide="fingerprint" class="w-6 h-6"></i></div>
-                    <h3 class="text-xl font-bold uppercase mb-2">Feature Three</h3>
-                    <p class="text-slate-400 text-sm">Sed do eiusmod tempor.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="py-24 bg-[#0f172a]">
-            <div class="container mx-auto px-6">
-                <h2 class="text-4xl font-oswald font-bold text-white uppercase mb-10 text-center">Gallery</h2>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-                    <div class="col-span-2 row-span-2 h-80 md:h-96"><img
-                            src="https://placehold.co/600x400/334155/94a3b8?text=Gallery+1"
-                            class="w-full h-full object-cover rounded-lg"></div>
-                    <div class="h-40 md:h-44"><img src="https://placehold.co/300x200/475569/94a3b8?text=Image+2"
-                            class="w-full h-full object-cover rounded-lg"></div>
-                    <div class="h-40 md:h-44"><img src="https://placehold.co/300x200/475569/94a3b8?text=Image+3"
-                            class="w-full h-full object-cover rounded-lg"></div>
-                    <div class="h-40 md:h-44"><img src="https://placehold.co/300x200/475569/94a3b8?text=Image+4"
-                            class="w-full h-full object-cover rounded-lg"></div>
-                    <div class="h-40 md:h-44"><img src="https://placehold.co/300x200/475569/94a3b8?text=Image+5"
-                            class="w-full h-full object-cover rounded-lg"></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="py-32 px-6 bg-blue-700 text-center">
-            <div class="container mx-auto">
-                <h2
-                    class="text-6xl md:text-8xl font-black italic uppercase mb-6 leading-none transform -skew-x-6 font-barlow">
-                    Ready To<br />Evolve?</h2>
-                <p class="text-blue-100 text-xl mb-10 max-w-2xl mx-auto">Lorem ipsum dolor sit amet consectetur
-                    adipiscing elit.</p><button
-                    class="bg-[#0b1120] text-white px-12 py-5 font-black uppercase text-xl font-barlow">Get
-                    Started</button>
-            </div>
-        </section>
-
-        <section id="location-b" class="bg-[#0b1120] border-t border-slate-800">
-            <div class="grid grid-cols-1 lg:grid-cols-3 h-[500px]">
-                <!-- Info Panel -->
-                <div class="p-10 lg:p-16 flex flex-col justify-center bg-[#0f172a]">
-                    <h3 class="text-3xl font-black italic uppercase mb-8 font-barlow">HQ Location</h3>
-                    <div class="space-y-6 text-sm font-medium text-slate-300">
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 bg-blue-900/50 rounded flex items-center justify-center shrink-0"><i
-                                    data-lucide="map-pin" class="text-blue-400"></i></div>
-                            <div>
-                                <p class="text-white font-bold uppercase mb-1">Address</p>
-                                <p>10/129 Soi Ta-iad, Chalong,<br>Phuket 83130, Thailand</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 bg-blue-900/50 rounded flex items-center justify-center shrink-0"><i
-                                    data-lucide="clock" class="text-blue-400"></i></div>
-                            <div>
-                                <p class="text-white font-bold uppercase mb-1">Training Hours</p>
-                                <p>Mon - Sat: 08:00 - 20:00</p>
-                                <p>Sunday: Closed</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Map -->
-                <div class="lg:col-span-2 bg-slate-800 relative">
-                    <iframe class="w-full h-full"
-                        src=" https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.4250000000003!2d98.3377!3d7.8322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30505c6c9c7b5e5b%3A0x4c6e8a4b6c7b5e5b!2sPhuket%20Defense%20Lab%2C%20Chalong%2C%20Phuket%2C%20Thailand!5e0!3m2!1sen!2sus!4v1699999999999"
-                        frameborder="0"></iframe>
-                    <div
-                        class=" bg-[url('https://maps.googleapis.com/maps/api/staticmap?center=7.8322,98.3377&zoom=14&size=800x400&maptype=roadmap&key=YOUR_API_KEY')] bg-cover bg-center map-grayscale">
-                    </div>
-                    <div class="absolute inset-0 pointer-events-none border-l border-slate-800"></div>
-                </div>
-            </div>
-            <div class="bg-[#0b1120] py-6 text-center text-xs font-bold uppercase text-slate-500">
-                © 2024 Phuket Defense Lab
-            </div>
-        </section>
-
-        <footer
-            class="bg-[#0b1120] py-12 px-6 border-t border-slate-800 text-center text-slate-500 text-sm font-bold uppercase">
-            <p>© 2024 Lorem Ipsum Demo.</p>
-        </footer>
-    </div>
-
-    <!-- DESIGN C: BLUEPRINT -->
-     
-    <div id="design-c" class="design-section bg-[#0a0f1c] text-white font-inter min-h-screen">
-        <div class="bg-blue-600 text-white font-bold py-2 text-center text-sm uppercase">⚡ Lorem Ipsum: Dolor 50% Off
-        </div>
-        <nav class="absolute top-10 w-full z-50 px-6 py-6 flex justify-between items-center">
-            <span class="font-teko text-3xl font-bold text-white italic">LID</span>
-            <div class="hidden md:flex gap-8 text-sm font-bold uppercase text-white/80"><a href="#">About</a><a
-                    href="#">Prices</a><a href="#">Classes</a><a href="#">Contact</a></div>
-            <button class="bg-blue-600 text-white px-8 py-2 font-bold uppercase text-sm skew-x-[-10deg]"><span
-                    class="skew-x-[10deg] block">Book Now</span></button>
-        </nav>
-
-        <header class="relative h-screen flex items-center justify-center overflow-hidden">
-            <div class="absolute inset-0"><img src="https://placehold.co/1920x1080/1e293b/475569?text=Hero+Background"
-                    class="w-full h-full object-cover">
-                <div class="absolute inset-0 bg-gradient-to-b from-[#0a0f1c]/90 via-[#0a0f1c]/50 to-[#0a0f1c]"></div>
-            </div>
-            <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16">
-                <h2 class="text-blue-500 font-bold tracking-[0.3em] text-sm mb-4 uppercase">Lorem Ipsum Dolor</h2>
-                <h1 class="text-6xl md:text-9xl font-teko font-bold text-white uppercase italic leading-[0.8] mb-8">
-                    Lorem<br /><span
-                        class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">Ipsum
-                        Lab</span></h1>
-                <p class="text-slate-200 text-lg md:text-xl mb-10 max-w-2xl mx-auto">Consectetur adipiscing elit sed do
-                    eiusmod tempor.</p>
-                <button class="bg-blue-600 text-white px-12 py-4 font-bold text-lg uppercase">Book Now</button>
-            </div>
-        </header>
-
-        <section class="py-20 bg-white text-[#0a0f1c]">
-            <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h2 class="text-4xl md:text-6xl font-teko font-bold uppercase leading-none mb-6">LOREM IPSUM
-                        DOLOR,<br /><span class="text-blue-700">SIT AMET CONSECTETUR</span></h2>
-                    <p class="text-slate-600 text-lg mb-8">Adipiscing elit sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua ut enim ad minim veniam.</p>
-                    <button class="border-2 border-[#0a0f1c] text-[#0a0f1c] px-8 py-3 font-bold uppercase">Learn
-                        More</button>
-                </div>
-                <div class="relative group cursor-pointer">
-                    <div class="aspect-video bg-slate-200 overflow-hidden relative shadow-2xl"><img
-                            src="https://placehold.co/800x450/94a3b8/475569?text=Video+Tour"
-                            class="w-full h-full object-cover">
-                        <div class="absolute inset-0 flex items-center justify-center"><i data-lucide="play"
-                                class="w-24 h-24 text-white fill-white drop-shadow-lg"></i></div>
-                        <div class="absolute bottom-4 left-0 w-full text-center">
-                            <h3 class="text-5xl font-teko font-bold text-white uppercase italic">VIDEO TOUR</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="py-20 bg-[#0b1120] border-t border-white/10">
-            <div class="container mx-auto px-6">
-                <!-- Google Header -->
-                <div class="flex flex-col md:flex-row items-center justify-between mb-10 gap-4">
-                    <div class="flex items-center gap-4 bg-white px-6 py-3 rounded-full shadow-sm">
-                        <svg class="w-8 h-8" viewBox="0 0 48 48">
-                            <path fill="#EA4335"
-                                d="M24 9.5c3.54 0 6.63 1.22 9.14 3.59l6.81-6.81C35.75 2.64 29.97 0 24 0 14.66 0 6.55 5.38 2.61 13.29l7.98 6.19C12.48 13.06 17.75 9.5 24 9.5z">
-                            </path>
-                            <path fill="#4285F4"
-                                d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6.19c4.51-4.18 7.09-10.36 7.09-17.84z">
-                            </path>
-                            <path fill="#FBBC05"
-                                d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z">
-                            </path>
-                            <path fill="#34A853"
-                                d="M24 48c6.48 0 12.56-2.15 16.96-6.19l-7.73-6.19C29.79 38.69 27.22 40 24 40c-6.25 0-11.52-3.56-13.47-9.97l-7.98 6.19C6.55 42.62 14.66 48 24 48z">
-                            </path>
-                        </svg>
+                <div class="min-w-[320px] bg-white p-8 rounded-2xl shadow-xl snap-center text-[#071B3F]">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-[#2F80ED] text-white rounded-full flex items-center justify-center font-bold">S</div>
                         <div>
-                            <div class="font-bold text-sm text-slate-800">Excellent</div>
-                            <div class="flex text-[#e7711b] w-24"><i data-lucide="star"
-                                    class="fill-current w-4 h-4"></i><i data-lucide="star"
-                                    class="fill-current w-4 h-4"></i><i data-lucide="star"
-                                    class="fill-current w-4 h-4"></i><i data-lucide="star"
-                                    class="fill-current w-4 h-4"></i><i data-lucide="star"
-                                    class="fill-current w-4 h-4"></i></div>
+                            <div class="font-bold text-sm uppercase">Saint Jay</div>
+                            <div class="text-xs text-slate-400 text-left">1 year ago</div>
                         </div>
                     </div>
-                    <div class="text-slate-500 text-sm font-medium">Based on 1,138 reviews on Google</div>
-                </div>
-
-                <!-- Google Style Review Cards (Horizontal Scroll) -->
-                <div class="flex gap-4 overflow-x-auto hide-scrollbar pb-8 snap-x">
-                    <!-- Review 1 -->
-                    <div class="min-w-[320px] bg-white p-6 rounded-xl shadow-md border border-slate-100 snap-center">
-                        <div class="flex items-center gap-3 mb-4">
-                            <div
-                                class="w-10 h-10 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold text-sm">
-                                D</div>
-                            <div>
-                                <div class="font-bold text-sm text-[#0a0f1c]">Darko Lukach</div>
-                                <div class="text-xs text-slate-400">1 year ago</div>
-                            </div>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
-                                class="w-4 h-4 ml-auto opacity-50">
-                        </div>
-                        <div class="flex text-[#e7711b] w-20 mb-3"><i data-lucide="star"
-                                class="fill-current w-3 h-3"></i><i data-lucide="star"
-                                class="fill-current w-3 h-3"></i><i data-lucide="star"
-                                class="fill-current w-3 h-3"></i><i data-lucide="star"
-                                class="fill-current w-3 h-3"></i><i data-lucide="star" class="fill-current w-3 h-3"></i>
-                        </div>
-                        <p class="text-sm text-slate-600 leading-relaxed">"Perfekt place, clean mats and amazing
-                            coaches. Highly recommended!"</p>
-                    </div>
-
-                    <!-- Review 2 -->
-                    <div class="min-w-[320px] bg-white p-6 rounded-xl shadow-md border border-slate-100 snap-center">
-                        <div class="flex items-center gap-3 mb-4">
-                            <div
-                                class="w-10 h-10 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-sm">
-                                S</div>
-                            <div>
-                                <div class="font-bold text-sm text-[#0a0f1c]">Saint Jay</div>
-                                <div class="text-xs text-slate-400">1 year ago</div>
-                            </div>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
-                                class="w-4 h-4 ml-auto opacity-50">
-                        </div>
-                        <div class="flex text-[#e7711b] w-20 mb-3"><i data-lucide="star"
-                                class="fill-current w-3 h-3"></i><i data-lucide="star"
-                                class="fill-current w-3 h-3"></i><i data-lucide="star"
-                                class="fill-current w-3 h-3"></i><i data-lucide="star"
-                                class="fill-current w-3 h-3"></i><i data-lucide="star" class="fill-current w-3 h-3"></i>
-                        </div>
-                        <p class="text-sm text-slate-600 leading-relaxed">"Thai boxing perfection, you'll get fit by
-                            force. The community is great."</p>
-                    </div>
-
-                    <!-- Review 3 -->
-                    <div class="min-w-[320px] bg-white p-6 rounded-xl shadow-md border border-slate-100 snap-center">
-                        <div class="flex items-center gap-3 mb-4">
-                            <div
-                                class="w-10 h-10 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold text-sm">
-                                M</div>
-                            <div>
-                                <div class="font-bold text-sm text-[#0a0f1c]">Makayla Seto</div>
-                                <div class="text-xs text-slate-400">1 year ago</div>
-                            </div>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
-                                class="w-4 h-4 ml-auto opacity-50">
-                        </div>
-                        <div class="flex text-[#e7711b] w-20 mb-3"><i data-lucide="star"
-                                class="fill-current w-3 h-3"></i><i data-lucide="star"
-                                class="fill-current w-3 h-3"></i><i data-lucide="star"
-                                class="fill-current w-3 h-3"></i><i data-lucide="star"
-                                class="fill-current w-3 h-3"></i><i data-lucide="star" class="fill-current w-3 h-3"></i>
-                        </div>
-                        <p class="text-sm text-slate-600 leading-relaxed">"Great gym, very inclusive for women and they
-                            are very sanitary. Love it here."</p>
-                    </div>
+                    <p class="text-sm text-slate-600 leading-relaxed font-medium italic">"Thai boxing perfection, the community is great."</p>
                 </div>
             </div>
-        </section>
-
-        <section class="py-24 bg-[#0a0f1c] px-6">
-            <div class="container mx-auto">
-                <h2 class="text-center text-5xl font-teko font-bold text-white mb-16 uppercase">Meet Our Team</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                    <div class="bg-[#151b2b] rounded-lg overflow-hidden border border-white/10">
-                        <div class="h-80 bg-slate-800"><img src="https://placehold.co/500x320/475569/94a3b8?text=Team+1"
-                                class="w-full h-full object-cover"></div>
-                        <div class="p-6">
-                            <h3 class="text-2xl font-bold text-white mb-2">John Doe</h3>
-                            <p class="text-xs text-slate-400 mb-4">Lorem ipsum dolor sit amet consectetur.</p><span
-                                class="text-[10px] bg-blue-900/30 text-blue-300 px-2 py-1 rounded">LOREM</span>
-                        </div>
-                    </div>
-                    <div class="bg-[#151b2b] rounded-lg overflow-hidden border border-white/10">
-                        <div class="h-80 bg-slate-800"><img src="https://placehold.co/500x320/475569/94a3b8?text=Team+2"
-                                class="w-full h-full object-cover"></div>
-                        <div class="p-6">
-                            <h3 class="text-2xl font-bold text-white mb-2">Jane Smith</h3>
-                            <p class="text-xs text-slate-400 mb-4">Adipiscing elit sed do eiusmod tempor.</p><span
-                                class="text-[10px] bg-blue-900/30 text-blue-300 px-2 py-1 rounded">IPSUM</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="py-20 bg-blue-700 text-center">
-            <div class="container mx-auto px-6">
-                <h2 class="text-5xl font-black italic uppercase mb-6 text-white transform -skew-x-6 font-barlow">LOREM
-                    IPSUM DOLOR</h2><button
-                    class="bg-[#0b1120] text-white px-10 py-4 font-bold uppercase font-barlow">Join Now</button>
-            </div>
-        </section>
-
-        <section class="py-24 bg-[#0a0f1c] px-6">
-            <div class="container mx-auto">
-                <h2 class="text-center text-4xl font-teko font-bold text-blue-500 mb-16 uppercase">Why Choose Us?</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
-                    <div class="p-6 bg-[#151b2b] rounded-lg border-b-4 border-blue-600"><i data-lucide="award"
-                            class="w-12 h-12 text-yellow-400 mx-auto mb-4"></i>
-                        <h3 class="text-xl font-bold text-white mb-2 uppercase">Feature One</h3>
-                        <p class="text-sm text-slate-400">Lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <div class="p-6 bg-[#151b2b] rounded-lg border-b-4 border-blue-600"><i data-lucide="users"
-                            class="w-12 h-12 text-yellow-400 mx-auto mb-4"></i>
-                        <h3 class="text-xl font-bold text-white mb-2 uppercase">Feature Two</h3>
-                        <p class="text-sm text-slate-400">Consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="p-6 bg-[#151b2b] rounded-lg border-b-4 border-blue-600"><i data-lucide="heart"
-                            class="w-12 h-12 text-yellow-400 mx-auto mb-4"></i>
-                        <h3 class="text-xl font-bold text-white mb-2 uppercase">Feature Three</h3>
-                        <p class="text-sm text-slate-400">Sed do eiusmod tempor.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 7. Gallery (Inside The Lab - PDF Page 7 - Bento Grid) -->
-        <section class="py-24 bg-[#050810] px-6">
-            <div class="container mx-auto">
-                <h2 class="text-center text-5xl font-teko font-bold text-white mb-16 uppercase tracking-wider">A Look Into The Wrestling Gym</h2>
-                
-                <!-- BENTO GRID - ENLARGED -->
-                <div class="grid grid-cols-2 md:grid-cols-4 grid-rows-4 md:grid-rows-2 gap-4 h-[1000px] md:h-[800px]">
-                    
-                    <!-- 1. BIG IMAGE (Left) - Takes up 2x2 space -->
-                    <div class="col-span-2 row-span-2 relative group overflow-hidden rounded-xl shadow-2xl">
-                        <img src="https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?q=80&w=2069&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60"></div>
-                        <div class="absolute bottom-6 left-6">
-                            <span class="font-teko text-3xl text-white uppercase tracking-widest bg-blue-600 px-3 py-1">Main Mat Area</span>
-                        </div>
-                    </div>
-
-                    <!-- 2 (Top Right 1) -->
-                    <div class="col-span-1 row-span-1 relative group overflow-hidden rounded-xl shadow-lg">
-                        <img src="https://images.unsplash.com/photo-1626246939899-72202633852f?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    </div>
-
-                    <!-- 3. T-Shirt (Top Right 2) -->
-                    <div class="col-span-1 row-span-1 relative group overflow-hidden rounded-xl bg-white flex items-center justify-center shadow-lg border-4 border-white">
-                        <div class="text-center">
-                            <i data-lucide="shirt" class="w-20 h-20 text-[#0a0f1c] mx-auto mb-2"></i>
-                            <p class="font-teko text-2xl text-[#0a0f1c] font-bold uppercase">Team Gear</p>
-                        </div>
-                    </div>
-
-                    <!-- 4 (Bottom Right 1) -->
-                    <div class="col-span-1 row-span-1 relative group overflow-hidden rounded-xl shadow-lg">
-                        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    </div>
-
-                    <!-- 5 (Bottom Right 2) -->
-                    <div class="col-span-1 row-span-1 relative group overflow-hidden rounded-xl shadow-lg">
-                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    </div>
-                </div>
-                
-                <!-- Extra Row (Bottom strip - Larger) -->
-                <div class="grid grid-cols-4 gap-4 mt-4 h-48">
-                     <div class="col-span-1 rounded-xl overflow-hidden shadow-lg group relative">
-                        <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                     </div>
-                     <div class="col-span-1 rounded-xl overflow-hidden shadow-lg group relative">
-                        <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                     </div>
-                     <div class="col-span-1 rounded-xl overflow-hidden bg-red-600 flex items-center justify-center shadow-lg group hover:bg-red-700 transition-colors cursor-pointer">
-                        <div class="text-center">
-                            <span class="font-teko text-5xl font-bold text-white block leading-none">SHOES</span>
-                            <span class="font-inter text-xs text-white/80 uppercase tracking-widest">Required</span>
-                        </div>
-                     </div>
-                     <div class="col-span-1 rounded-xl overflow-hidden shadow-lg group relative">
-                        <img src="https://images.unsplash.com/photo-1517438476312-10d79c077509?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                     </div>
-                </div>
-            </div>
-        </section>
-
-                <section id="classes-c" class="py-24 bg-white text-black px-6">
-            <div class="container mx-auto">
-                <h2 class="text-center text-4xl font-teko font-bold text-[#0a0f1c] mb-16 uppercase">Our Classes</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div class="rounded-xl overflow-hidden shadow-lg relative h-96 group"><img src="https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?q=80&w=2069&auto=format&fit=crop" class="w-full h-full object-cover brightness-50 group-hover:brightness-75 transition-all"><div class="absolute bottom-0 left-0 p-6"><h3 class="text-3xl font-bold text-white mb-2 font-serif">Beginner</h3><button class="border border-white text-white px-4 py-1 text-xs uppercase font-bold">Learn More</button></div></div>
-                    <div class="rounded-xl overflow-hidden shadow-lg relative h-96 group"><img src="https://images.unsplash.com/photo-1555597673-b21d5c935865?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover brightness-50 group-hover:brightness-75 transition-all"><div class="absolute bottom-0 left-0 p-6"><h3 class="text-3xl font-bold text-white mb-2 font-serif">Amateur</h3><button class="border border-white text-white px-4 py-1 text-xs uppercase font-bold">Learn More</button></div></div>
-                    <div class="rounded-xl overflow-hidden shadow-lg relative h-96 group"><img src="https://images.unsplash.com/photo-1595078475328-1ab05d0a6a0e?q=80&w=2000&auto=format&fit=crop" class="w-full h-full object-cover brightness-50 group-hover:brightness-75 transition-all"><div class="absolute bottom-0 left-0 p-6"><h3 class="text-3xl font-bold text-white mb-2 font-serif">Pro</h3><button class="border border-white text-white px-4 py-1 text-xs uppercase font-bold">Learn More</button></div></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="py-24 bg-white text-center border-t border-gray-200">
-            <div class="container mx-auto px-6">
-                <h2 class="text-5xl font-teko font-bold text-[#0a0f1c] mb-4 uppercase">Try Lorem Today</h2>
-                <p class="text-slate-500 mb-8">Consectetur adipiscing elit sed do eiusmod!</p><button
-                    class="bg-red-600 text-white px-8 py-4 font-bold uppercase text-lg">Get Free Trial</button>
-            </div>
-        </section>
-
-        <footer class="bg-[#0a0f1c] text-white">
-            <div class="relative w-full h-[400px]"><img
-                    src="https://placehold.co/1920x400/1e293b/475569?text=Map+Placeholder"
-                    class="w-full h-full object-cover" style="filter: grayscale(1);">
-                <div
-                    class="absolute top-1/2 left-6 transform -translate-y-1/2 bg-white/95 text-[#0a0f1c] p-8 rounded-lg shadow-2xl max-w-sm hidden md:block">
-                    <h3 class="text-2xl font-teko font-bold uppercase mb-4 text-blue-800">Visit Us</h3>
-                    <div class="space-y-4 text-sm">
-                        <div class="flex items-start gap-3"><i data-lucide="map-pin"
-                                class="text-blue-600 w-5 h-5 mt-1"></i>
-                            <p>123 Lorem Street, Ipsum City<br>Country 12345</p>
-                        </div>
-                        <div class="flex items-center gap-3"><i data-lucide="phone" class="text-blue-600 w-5 h-5"></i>
-                            <p>+00 0X XXX XXXX</p>
-                        </div>
-                        <div class="flex items-center gap-3"><i data-lucide="clock" class="text-blue-600 w-5 h-5"></i>
-                            <p>Mon - Sat: 08:00 - 20:00</p>
-                        </div>
-                    </div><button class="mt-6 w-full bg-blue-700 text-white py-3 font-bold uppercase">Get
-                        Directions</button>
-                </div>
-            </div>
-            <div class="bg-black py-6 px-6 text-center text-xs font-bold uppercase text-slate-500">
-                <p>© 2024 Lorem Ipsum Demo.</p>
-            </div>
-        </footer>
-    </div>
-
-    <!-- Design Switcher -->
-    <div
-        class="fixed bottom-6 right-6 z-[100] flex flex-col gap-2 bg-white/10 backdrop-blur p-2 rounded-xl border border-white/20">
-        <p class="text-[10px] font-bold text-center text-white uppercase mb-1">Select Design</p>
-        <div class="flex gap-2">
-            <button onclick="switchDesign('a')"
-                class="px-4 py-2 rounded-lg font-bold text-sm bg-[#0f172a] text-white border border-blue-600">IRON
-                WILL</button>
-            <button onclick="switchDesign('b')"
-                class="px-4 py-2 rounded-lg font-bold text-sm bg-blue-600 text-white">PRO ATHLETE</button>
-            <button onclick="switchDesign('c')"
-                class="px-4 py-2 rounded-lg font-bold text-sm bg-white text-black">BLUEPRINT</button>
         </div>
-    </div>
+    </section>
+
+    <section id="team" class="py-24 bg-[#071B3F] px-6">
+        <div class="container mx-auto">
+            <h2 class="text-center text-5xl font-teko font-bold text-white mb-16 uppercase italic tracking-widest">Meet Our <span class="text-[#2F80ED]">Coaches</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-[#051229] rounded-sm overflow-hidden border border-white/5 group">
+                    <div class="h-80 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=600" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 brightness-75">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#071B3F] to-transparent opacity-60"></div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-3xl font-bold text-white mb-2 italic uppercase font-teko tracking-wider">John Doe</h3>
+                        <p class="text-xs text-[#2F80ED] font-black tracking-[0.2em] font-inter">HEAD DIRECTOR / LOREM SPECIALIST</p>
+                    </div>
+                </div>
+                <div class="bg-[#051229] rounded-sm overflow-hidden border border-white/5 group">
+                    <div class="h-80 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fe?q=80&w=600" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 brightness-75">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#071B3F] to-transparent opacity-60"></div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-3xl font-bold text-white mb-2 italic uppercase font-teko tracking-wider">Jane Smith</h3>
+                        <p class="text-xs text-[#2F80ED] font-black tracking-[0.2em] font-inter">TECHNICAL LEAD / IPSUM COACH</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-[#051229] px-6">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-center text-4xl font-teko font-bold text-white mb-10 uppercase tracking-widest italic">A Look Into The Lab</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 md:grid-rows-2 gap-3 h-[800px] md:h-[500px]">
+                <div class="col-span-2 row-span-2 relative group overflow-hidden rounded-lg shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?q=80&w=800" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-4 left-4"><span class="font-teko text-xl text-white uppercase tracking-widest bg-[#2F80ED] px-3 py-1 italic">Main Mat Area</span></div>
+                </div>
+                <div class="relative group overflow-hidden rounded-lg border border-white/5"><img src="https://images.unsplash.com/photo-1626246939899-72202633852f?q=80&w=400" class="w-full h-full object-cover"></div>
+                <div class="relative rounded-lg bg-white flex flex-col items-center justify-center text-center p-4">
+                    <i data-lucide="shirt" class="w-10 h-10 text-[#071B3F] mb-1"></i>
+                    <p class="font-teko text-lg text-[#071B3F] font-bold uppercase">Team Gear</p>
+                </div>
+                <div class="relative group overflow-hidden rounded-lg border border-white/5"><img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=400" class="w-full h-full object-cover"></div>
+                <div class="relative group overflow-hidden rounded-lg border border-white/5"><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=400" class="w-full h-full object-cover"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="classes" class="py-24 bg-white text-[#071B3F] px-6">
+        <div class="container mx-auto text-center">
+            <h2 class="text-5xl font-teko font-bold mb-16 uppercase italic underline decoration-[#2F80ED] decoration-8 underline-offset-8">Our Classes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="rounded-2xl overflow-hidden shadow-2xl relative h-[450px] group">
+                    <img src="https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?q=80&w=600" class="w-full h-full object-cover brightness-50 group-hover:brightness-75 transition-all duration-500">
+                    <div class="absolute inset-0 p-8 flex flex-col justify-end text-left">
+                        <h3 class="text-4xl font-bold text-white mb-2 font-teko uppercase italic tracking-widest">Beginner</h3>
+                        <p class="text-white/80 mb-6 text-sm font-medium">Foundation training for new members.</p>
+                        <button class="bg-[#2F80ED] text-white px-6 py-2 text-xs uppercase font-black self-start hover:bg-[#071B3F] transition-all">Enroll Now</button>
+                    </div>
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-2xl relative h-[450px] group">
+                    <img src="https://images.unsplash.com/photo-1555597673-b21d5c935865?q=80&w=600" class="w-full h-full object-cover brightness-50 group-hover:brightness-75 transition-all duration-500">
+                    <div class="absolute inset-0 p-8 flex flex-col justify-end text-left">
+                        <h3 class="text-4xl font-bold text-white mb-2 font-teko uppercase italic tracking-widest">Amateur</h3>
+                        <p class="text-white/80 mb-6 text-sm font-medium">Technical development and sparring.</p>
+                        <button class="bg-[#2F80ED] text-white px-6 py-2 text-xs uppercase font-black self-start hover:bg-[#071B3F] transition-all">Enroll Now</button>
+                    </div>
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-2xl relative h-[450px] group">
+                    <img src="https://images.unsplash.com/photo-1595078475328-1ab05d0a6a0e?q=80&w=600" class="w-full h-full object-cover brightness-50 group-hover:brightness-75 transition-all duration-500">
+                    <div class="absolute inset-0 p-8 flex flex-col justify-end text-left">
+                        <h3 class="text-4xl font-bold text-white mb-2 font-teko uppercase italic tracking-widest">Pro</h3>
+                        <p class="text-white/80 mb-6 text-sm font-medium">Advanced competition preparation.</p>
+                        <button class="bg-[#2F80ED] text-white px-6 py-2 text-xs uppercase font-black self-start hover:bg-[#071B3F] transition-all">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="location" class="bg-[#051229] border-t border-white/5">
+        <div class="grid grid-cols-1 lg:grid-cols-3 h-auto lg:h-[550px]">
+            <div class="p-12 lg:p-20 flex flex-col justify-center bg-[#071B3F]">
+                <h3 class="text-4xl font-teko font-bold uppercase italic mb-10 tracking-widest text-white border-l-8 border-[#2F80ED] pl-6">HQ Location</h3>
+                <div class="space-y-8 text-sm font-bold text-[#A9CBF6] uppercase tracking-widest">
+                    <div class="flex items-start gap-5">
+                        <div class="w-12 h-12 bg-[#2F80ED] text-white rounded flex items-center justify-center shrink-0 shadow-lg"><i data-lucide="map-pin"></i></div>
+                        <div><p class="text-white mb-1">Address</p><p class="font-medium normal-case">10/129 Soi Ta-iad, Chalong,<br>Phuket 83130, Thailand</p></div>
+                    </div>
+                    <div class="flex items-start gap-5">
+                        <div class="w-12 h-12 bg-[#2F80ED] text-white rounded flex items-center justify-center shrink-0 shadow-lg"><i data-lucide="clock"></i></div>
+                        <div><p class="text-white mb-1">Training Hours</p><p class="font-medium normal-case">Mon - Sat: 08:00 - 20:00<br>Sunday: Closed</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:col-span-2 relative min-h-[350px]">
+                <iframe class="w-full h-full absolute inset-0 grayscale contrast-125 opacity-60 hover:opacity-100 transition duration-1000" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.2201402206686!2d98.3377!3d7.8322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNDknNTUuOSJOIDk4wrAyMCcxNS43IkU!5e0!3m2!1sen!2sth!4v1625000000000!5m2!1sen!2sth" frameborder="0"></iframe>
+            </div>
+        </div>
+        <div class="bg-[#051229] py-10 text-center text-[10px] font-black uppercase text-slate-500 tracking-[0.5em]">
+            © 2024 LOREM IPSUM LAB | PROFESSIONAL COMBAT DEFENSE
+        </div>
+    </section>
 
     <script>
         lucide.createIcons();
-        function switchDesign(design) {
-            document.querySelectorAll('.design-section').forEach(el => el.classList.remove('active'));
-            document.getElementById(`design-${design}`).classList.add('active');
-            window.scrollTo(0, 0);
-        }
     </script>
 </body>
 
